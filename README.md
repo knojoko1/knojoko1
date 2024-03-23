@@ -12,3 +12,10 @@
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: I am a linux enthusiast and use ubuntu on my machines
 
+## Certifications
+
+- Microsoft Certified Dynamics 365 Fundamentals (CRM)
+- Microsoft Certified: Dynamics 365 Fundamentals (ERP)
+- Microsoft Certified: Dynamics 365 Fundamentals
+- Microsoft Certified: Azure Fundamentals
+- Introduction to SUSE Linux Enterprise Server (SLES)

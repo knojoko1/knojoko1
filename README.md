@@ -2,7 +2,6 @@
 
 **Service Desk Team Leader (Acting) @ Dimension Data/NTT Data**
 
-Here are some ideas to get you started:
 
 - 🔭 I’m currently studding BCOM IT Management @ Mancosa College
 - 🌱 I’m currently learning Ansible, Java, HTML and Databases

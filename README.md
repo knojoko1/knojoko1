@@ -1,6 +1,6 @@
 ### About Me
 
-**Service Desk Team Leader (Acting) @ Dimension data/NTT Data**
+**Service Desk Team Leader (Acting) @ Dimension Data/NTT Data**
 
 Here are some ideas to get you started:
 

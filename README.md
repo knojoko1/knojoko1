@@ -15,6 +15,8 @@ I am 2nd year BCOM IT Management student at Mancosa College and working as a ser
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: I am a linux enthusiast and use ubuntu on my machines
 
+---
+
 ## Objectives
 
 Eager to transition into software development and IT management space.

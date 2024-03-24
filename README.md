@@ -1,9 +1,12 @@
-### About Me
+### Hello, I'm Khaya Nojoko
+<a href="https://www.linkedin.com/in/khayalethu-prudent-nojoko/"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
-**Service Desk Team Leader (Acting) @ Dimension Data/NTT Data**
+## Brief Introduction
+
+I am BCOM IT Management student at Mancosa College and working as a service desk team leader (Acting) with a profound interest in technology and a dedication to solving complex problems.
 
 
-- 🔭 I’m currently studding BCOM IT Management @ Mancosa College
+
 - 🌱 I’m currently learning Ansible, Java, HTML and Databases
 <!-- - 👯 I’m looking to collaborate on ...
 - 🤔 I’m looking for help with ...
@@ -11,6 +14,17 @@
 - 📫 How to reach me: knojoko@gmail.com 
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: I am a linux enthusiast and use ubuntu on my machines
+
+## Objectives
+
+Eager to transition into software development and IT management space.
+
+## Skills
+
+| Skill             | Associated Project
+|
+| Java              | Mancosa scholl projects
+
 
 ## Certifications
 

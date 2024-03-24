@@ -3,7 +3,7 @@
 
 ## Brief Introduction
 
-I am BCOM IT Management student at Mancosa College and working as a service desk team leader (Acting) with a profound interest in technology and a dedication to solving complex problems.
+I am 2nd year BCOM IT Management student at Mancosa College and working as a service desk team leader (Acting) with a profound interest in technology and a dedication to solving complex problems.
 
 
 

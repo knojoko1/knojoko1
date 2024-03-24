@@ -21,9 +21,9 @@ Eager to transition into software development and IT management space.
 
 ## Skills
 
-| Skill             | Associated Project
-|
-| Java              | Mancosa scholl projects
+| Skill             | Associated Project       |
+|-------------------|--------------------------|
+| Java              | Mancosa scholl projects  |
 
 
 ## Certifications

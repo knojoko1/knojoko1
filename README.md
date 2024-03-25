@@ -28,6 +28,7 @@ Eager to transition into software development and IT management space.
 | Java              | Mancosa school projects  |
 | HTML              | Mancosa school projects  |
 | Databases MySQL   | Mancosa school projects  |
+| Ansible           | Home lab projects        |
 
 
 ## Certifications

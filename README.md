@@ -1,40 +1,57 @@
-### Khaya Nojoko
-<a href="https://www.linkedin.com/in/khayalethu-prudent-nojoko/"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+# Hi there, I'm Khayalethu (Khaya) Nojoko 👋
 
-## Brief Introduction
+### Service Desk Team Lead | Aspiring Software Developer | BCom IT Management Student
 
-I am 2nd year BCOM IT Management student at Mancosa College and working as a service desk team leader (Acting) with a profound interest in technology and a dedication to solving complex problems.
+I am a dedicated IT professional with over 5 years of experience in technical support and service desk leadership. Currently, I serve as a **Service Desk Team Lead (2IC)** at NTT DATA, where I manage team performance, handle technical escalations, and drive process improvements. 
 
-
-
-- 🌱 I’m currently learning Ansible, Java, HTML and Databases
-<!-- - 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-/- 💬 Ask me about ... -->
-- 📫 How to reach me: knojoko@gmail.com 
-- 😄 Pronouns: He/Him
-- ⚡ Fun fact: I am a linux enthusiast and use ubuntu on my machines
+I am passionate about the intersection of leadership and technical innovation. I am currently pursuing a **BCom in IT Management** at MANCOSA to bridge the gap between service operations and software development.
 
 ---
 
-## Objectives
+### 🚀 At a Glance
 
-Eager to transition into software development and IT management space.
+* **🌱 Learning:** Ansible (Home Lab), Java, HTML, and MySQL (Mancosa Projects).
+* **🔭 Objective:** Transitioning into the **Software Development** and **IT Management** space.
+* **📫 Contact:** [knojoko@gmail.com](mailto:knojoko@gmail.com).
+* **😄 Pronouns:** He/Him.
+* **⚡ Fun Fact:** I am a Linux enthusiast and use Ubuntu on all my personal machines.
 
-## Skills
+---
 
-| Skill             | Associated Project       |
-|-------------------|--------------------------|
-| Java              | Mancosa school projects  |
-| HTML              | Mancosa school projects  |
-| Databases MySQL   | Mancosa school projects  |
-| Ansible           | Home lab projects        |
+### 🛠 Tech Stack & Skills
 
+**Infrastructure & Management**
+* **Active Directory & Azure AD**
+* **Microsoft 365 & Exchange**
+* **Endpoint Management**
+* **ServiceNow & SolarWinds**
+* **Team Leadership (2IC)**
 
-## Certifications
+**Development & Automation**
+* **Java & HTML:** Academic projects.
+* **Databases:** SQL and MySQL.
+* **Automation:** Ansible configuration management.
 
-- Microsoft Certified Dynamics 365 Fundamentals (CRM)
-- Microsoft Certified: Dynamics 365 Fundamentals (ERP)
-- Microsoft Certified: Dynamics 365 Fundamentals
-- Microsoft Certified: Azure Fundamentals
-- Introduction to SUSE Linux Enterprise Server (SLES)
+---
+
+### 📜 Certifications
+
+* **Microsoft:** Dynamics 365 Fundamentals (CRM, ERP, and General)
+* **Microsoft:** Azure Fundamentals
+* **CompTIA:** Linux+ (Firewalls & Monitoring) and Security+
+* **Linux:** Introduction to SUSE Linux Enterprise Server (SLES)
+* **Customer Service:** Zendesk Professional Certificate
+
+---
+
+### 📈 Career Snapshot
+
+* **Service Desk Team Lead (2IC)** | NTT DATA
+* **Service Desk 2nd Line Agent** | NTT DATA & Coca-Cola Beverages Africa
+* **Customer Engineer** | BCX
+* **Desktop Support Engineer** | Dimension Data
+
+---
+
+### 🔗 Connect with me:
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/khayalethu-prudent-nojoko)

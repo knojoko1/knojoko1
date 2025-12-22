@@ -2,9 +2,7 @@
 
 ### Service Desk Team Lead | Aspiring Software Developer | BCom IT Management Student
 
-I am a dedicated IT professional with over 5 years of experience in technical support and service desk leadership. Currently, I serve as a **Service Desk Team Lead (2IC)** at NTT DATA, where I manage team performance, handle technical escalations, and drive process improvements. 
-
-I am passionate about the intersection of leadership and technical innovation. I am currently pursuing a **BCom in IT Management** at MANCOSA to bridge the gap between service operations and software development.
+B.Com. Graduate (Information and Technology Management) and experienced IT professional specializing in service desk leadership and technical support. Skilled in managing enterprise environments using Azure AD, Microsoft 365, and ServiceNow. Proven ability to streamline operations and elevate customer satisfaction through technical excellence and disciplined team management.
 
 ---
 

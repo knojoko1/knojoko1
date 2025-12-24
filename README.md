@@ -1,6 +1,6 @@
 # Hi there, I'm Khayalethu (Khaya) Nojoko 👋
 
-### Service Desk Team Lead | Aspiring Software Developer | BCom IT Management Graduate
+### Service Desk Team Lead | Aspiring Software Developer | B. Com. Information and Technology Management Graduate
 
 B.Com. Graduate (Information and Technology Management) and experienced IT professional specializing in service desk leadership and technical support. Skilled in managing enterprise environments using Azure AD, Microsoft 365, and ServiceNow. Proven ability to streamline operations and elevate customer satisfaction through technical excellence and disciplined team management.
 

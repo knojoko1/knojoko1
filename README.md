@@ -10,7 +10,7 @@ B.Com. Graduate (Information and Technology Management) and experienced IT profe
 
 * **🌱 Learning:** Ansible (Home Lab), Java, HTML, and MySQL (MANCOSA Projects)
 * **🔭 Objective:** Transitioning into the **Software Development** and **IT Management** space
-* **📫 Contact:** [khaya.nojoko@outlook.com](mailto:khaya.nojoko@outlook.com)
+* **📫 Contact:** [knojoko@gmail.com](mailto:knojoko@gmail.com)
 * **😄 Pronouns:** He / Him
 * **⚡ Fun Fact:** I am a Linux enthusiast and use Ubuntu on all my personal machines.
 

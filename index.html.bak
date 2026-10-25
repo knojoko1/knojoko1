@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaya Nojoko | IT Service Desk Lead & Systems Developer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-card: #21262d;
+            --border-color: #30363d;
+            --accent-blue: #58a6ff;
+            --accent-purple: #bc8cff;
+            --accent-green: #3fb950;
+            --accent-orange: #d29922;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --font-main: 'Inter', sans-serif;
+            --font-code: 'Fira Code', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            width: 100%;
+        }
+
+        /* Header / Hero Section */
+        header {
+            background: linear-gradient(180deg, #161b22 0%, #0d1117 100%);
+            border-bottom: 1px solid var(--border-color);
+            padding: 3rem 0 2rem 0;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 3px solid var(--accent-blue);
+            margin-bottom: 1rem;
+            box-shadow: 0 0 20px rgba(88, 166, 255, 0.25);
+        }
+
+        .profile-name {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .profile-title {
+            font-size: 1.15rem;
+            color: var(--accent-blue);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .location-badge {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .roles-badges {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .role-badge {
+            background: rgba(88, 166, 255, 0.1);
+            color: var(--accent-blue);
+            border: 1px solid rgba(88, 166, 255, 0.3);
+            padding: 0.35rem 0.85rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .bio-text {
+            max-width: 780px;
+            margin: 0 auto;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.7;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            color: var(--text-secondary);
+            font-size: 1.4rem;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-blue);
+            transform: translateY(-2px);
+        }
+
+        /* Navigation Tabs */
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            padding: 0.8rem 1.2rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tab-btn:hover {
+            color: var(--text-primary);
+        }
+
+        .tab-btn.active {
+            color: var(--accent-blue);
+            border-bottom-color: var(--accent-blue);
+        }
+
+        /* Content Sections */
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            border-left: 4px solid var(--accent-blue);
+            padding-left: 0.75rem;
+        }
+
+        /* Grid Cards Layout */
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .card-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .card-title a:hover {
+            color: var(--accent-blue);
+        }
+
+        .card-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .tech-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: var(--bg-card);
+            color: var(--accent-purple);
+            font-family: var(--font-code);
+            font-size: 0.75rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Skills Layout */
+        .skills-category {
+            margin-bottom: 2rem;
+        }
+
+        .skills-category h4 {
+            color: var(--accent-blue);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .skill-chip {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Timeline Items */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 2px solid var(--border-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.45rem;
+            top: 0.2rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--accent-blue);
+            border: 3px solid var(--bg-primary);
+        }
+
+        .timeline-date {
+            font-size: 0.85rem;
+            color: var(--accent-green);
+            font-family: var(--font-code);
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-role {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .timeline-org {
+            font-size: 0.95rem;
+            color: var(--accent-purple);
+            margin-bottom: 0.75rem;
+        }
+
+        .timeline-bullets {
+            color: var(--text-secondary);
+            padding-left: 1.2rem;
+            font-size: 0.95rem;
+        }
+
+        .timeline-bullets li {
+            margin-bottom: 0.4rem;
+        }
+
+        /* Certifications List */
+        .cert-card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .cert-info h4 {
+            font-size: 1.1rem;
+            color: var(--text-primary);
+        }
+
+        .cert-info p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .cert-issuer {
+            color: var(--accent-orange);
+            font-weight: 500;
+        }
+
+        .cert-date {
+            font-family: var(--font-code);
+            font-size: 0.85rem;
+            color: var(--accent-green);
+            background: rgba(63, 185, 80, 0.1);
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            border: 1px solid rgba(63, 185, 80, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            border-top: 1px solid var(--border-color);
+            padding: 1.5rem 0;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid-cards {
+                grid-template-columns: 1fr;
+            }
+            .tab-btn {
+                padding: 0.6rem 0.8rem;
+                font-size: 0.85rem;
+            }
+            .cert-card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Profile Section -->
+    <header>
+        <div class="container">
+            <img src="https://github.com/knojoko1.png" alt="knojoko1 Profile Avatar" class="avatar">
+            <h1 class="profile-name">Khaya Nojoko</h1>
+            <p class="profile-title">Service Desk Team Lead (2IC) & IT Professional</p>
+            <p class="location-badge"><i class="fa-solid fa-location-dot"></i> Based in South Africa</p>
+            
+            <div class="roles-badges">
+                <span class="role-badge"><i class="fa-solid fa-headset"></i> IT Service Management</span>
+                <span class="role-badge"><i class="fa-solid fa-server"></i> Linux Administration</span>
+                <span class="role-badge"><i class="fa-solid fa-code"></i> Software Development</span>
+                <span class="role-badge"><i class="fa-solid fa-gears"></i> DevOps & Automation</span>
+            </div>
+
+            <p class="bio-text">
+                I am an IT professional and Service Desk Team Lead holding a Bachelor of Commerce in Information and Technology Management from MANCOSA. My professional experience spans IT service management, enterprise technical support, infrastructure operations, endpoint management, and team leadership in business-critical environments. My long-term objective is to combine my experience in IT management and enterprise infrastructure with software development and automation to build practical, scalable technology solutions[cite: 1].
+            </p>
+
+            <div class="social-links">
+                <a href="https://github.com/knojoko1" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:contact@knojoko.africa" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://mypage.knojoko.africa/" target="_blank" title="Personal Website"><i class="fa-solid fa-globe"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container">
+        
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs">
+            <button class="tab-btn active" onclick="switchTab(event, 'glance')"><i class="fa-solid fa-compass"></i> At a Glance</button>
+            <button class="tab-btn" onclick="switchTab(event, 'experience')"><i class="fa-solid fa-briefcase"></i> Work History</button>
+            <button class="tab-btn" onclick="switchTab(event, 'skills')"><i class="fa-solid fa-microchip"></i> Technical Skills</button>
+            <button class="tab-btn" onclick="switchTab(event, 'certs')"><i class="fa-solid fa-certificate"></i> Certifications</button>
+            <button class="tab-btn" onclick="switchTab(event, 'education')"><i class="fa-solid fa-graduation-cap"></i> Education</button>
+            <button class="tab-btn" onclick="switchTab(event, 'projects')"><i class="fa-solid fa-folder-open"></i> Projects</button>
+        </nav>
+
+        <!-- At a Glance Tab -->
+        <section id="glance" class="tab-content active">
+            <h2 class="section-title">🚀 At a Glance</h2>
+            <div class="grid-cards">
+                <div class="card">
+                    <div class="card-header"><span class="card-title">💼 Current Focus</span></div>
+                    <p class="card-desc">Service Desk Leadership and IT Service Management (ITSM)</p>
+                </div>
+                <div class="card">
+                    <div class="card-header"><span class="card-title">🎓 Education</span></div>
+                    <p class="card-desc">B.Com. Information and Technology Management (MANCOSA)</p>
+                </div>
+                <div class="card">
+                    <div class="card-header"><span class="card-title">🌱 Active Learning</span></div>
+                    <p class="card-desc">Ansible, Java, HTML, SQL, and MySQL</p>
+                </div>
+                <div class="card">
+                    <div class="card-header"><span class="card-title">🔭 Career Objective</span></div>
+                    <p class="card-desc">Software Development and IT Management</p>
+                </div>
+                <div class="card">
+                    <div class="card-header"><span class="card-title">🐧 Linux Enthusiast</span></div>
+                    <p class="card-desc">Ubuntu, Linux Systems Administration, and Open Source</p>
+                </div>
+                <div class="card">
+                    <div class="card-header"><span class="card-title">⚙️ Technical Interests</span></div>
+                    <p class="card-desc">DevOps, Infrastructure Automation, Networking, and Systems Architecture</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+                <h3 style="color: var(--accent-blue); margin-bottom: 1rem;">📚 Currently Exploring</h3>
+                <ul style="color: var(--text-secondary); padding-left: 1.2rem; line-height: 1.8;">
+                    <li><strong>Ansible:</strong> Configuration management and infrastructure automation through hands-on home lab projects.</li>
+                    <li><strong>Java:</strong> Software development, object-oriented programming, and application design[cite: 1].</li>
+                    <li><strong>Web Development:</strong> HTML, CSS, and the fundamentals of building web applications[cite: 1].</li>
+                    <li><strong>Databases:</strong> SQL, MySQL, relational database design, and data management[cite: 1].</li>
+                    <li><strong>Linux:</strong> Systems administration, networking, and open-source technologies[cite: 1].</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Work Experience Tab -->
+        <section id="experience" class="tab-content">
+            <h2 class="section-title">💼 Career Snapshot</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">CURRENT ROLE</div>
+                    <div class="timeline-role">Service Desk Team Lead (2IC)</div>
+                    <div class="timeline-org">NTT DATA</div>
+                    <ul class="timeline-bullets">
+                        <li>Lead service desk team operations, providing 2IC escalation leadership and technical coordination.</li>
+                        <li>Oversee Incident, Problem, and Request Management across enterprise infrastructures.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">PREVIOUS ROLE</div>
+                    <div class="timeline-role">Service Desk 2nd Line Agent</div>
+                    <div class="timeline-org">NTT DATA & Coca-Cola Beverages Africa</div>
+                    <ul class="timeline-bullets">
+                        <li>Delivered 2nd line technical support for business-critical enterprise technology and systems.</li>
+                        <li>Managed endpoint administration, active directory assets, and user service requests.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">PREVIOUS ROLE</div>
+                    <div class="timeline-role">Customer Engineer</div>
+                    <div class="timeline-org">BCX</div>
+                    <ul class="timeline-bullets">
+                        <li>Provided hands-on enterprise hardware, software, and networking support for corporate client bases.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">PREVIOUS ROLE</div>
+                    <div class="timeline-role">Desktop Support Engineer</div>
+                    <div class="timeline-org">Dimension Data</div>
+                    <ul class="timeline-bullets">
+                        <li>Executed desktop support, endpoint provisioning, and user troubleshooting in high-volume enterprise environments.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Technical Skills Tab -->
+        <section id="skills" class="tab-content">
+            <h2 class="section-title">🛠️ Technical Skills & Tools</h2>
+            
+            <div class="skills-category">
+                <h4><i class="fa-solid fa-headset"></i> Enterprise IT & Service Management</h4>
+                <div class="skills-grid">
+                    <div class="skill-chip">IT Service Management (ITSM)</div>
+                    <div class="skill-chip">Incident, Problem & Request Management</div>
+                    <div class="skill-chip">Service Desk Operations & Leadership</div>
+                    <div class="skill-chip">Enterprise Technical Support</div>
+                    <div class="skill-chip">Endpoint Management</div>
+                    <div class="skill-chip">Microsoft 365 Administration</div>
+                    <div class="skill-chip">Active Directory & Azure AD</div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h4><i class="fa-solid fa-server"></i> Linux & Infrastructure</h4>
+                <div class="skills-grid">
+                    <div class="skill-chip"><i class="fa-brands fa-linux" style="color: #FCC624;"></i> Linux Systems Administration</div>
+                    <div class="skill-chip"><i class="fa-brands fa-ubuntu" style="color: #E95420;"></i> Ubuntu & Red Hat Linux</div>
+                    <div class="skill-chip">SUSE Linux Enterprise Server (SLES)</div>
+                    <div class="skill-chip">Networking & VLAN Configuration</div>
+                    <div class="skill-chip">Infrastructure Monitoring</div>
+                    <div class="skill-chip">OpenWrt Network Administration</div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h4><i class="fa-solid fa-code"></i> Programming & Software Development</h4>
+                <div class="skills-grid">
+                    <div class="skill-chip"><i class="fa-brands fa-java" style="color: #ED8B00;"></i> Java & OOP</div>
+                    <div class="skill-chip"><i class="fa-brands fa-python" style="color: #3776AB;"></i> Python Scripting & Automation</div>
+                    <div class="skill-chip"><i class="fa-solid fa-c" style="color: #00599C;"></i> C Fundamentals</div>
+                    <div class="skill-chip"><i class="fa-brands fa-html5" style="color: #E34F26;"></i> HTML & CSS</div>
+                    <div class="skill-chip"><i class="fa-solid fa-database" style="color: #4479A1;"></i> SQL & Relational Databases</div>
+                    <div class="skill-chip"><i class="fa-solid fa-server" style="color: #00758F;"></i> MySQL Database</div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h4><i class="fa-solid fa-gears"></i> DevOps & Automation</h4>
+                <div class="skills-grid">
+                    <div class="skill-chip"><i class="fa-solid fa-robot" style="color: #EE0000;"></i> Ansible Configuration Management</div>
+                    <div class="skill-chip">Infrastructure Automation</div>
+                    <div class="skill-chip">CI/CD Fundamentals</div>
+                    <div class="skill-chip"><i class="fa-brands fa-git-alt" style="color: #F05032;"></i> Git & GitHub Version Control</div>
+                    <div class="skill-chip">Linux Command-Line Tools</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Tab -->
+        <section id="certs" class="tab-content">
+            <h2 class="section-title">📜 Certifications & Professional Development</h2>
+            
+            <div class="cert-card">
+                <div class="cert-info">
+                    <h4>ITIL® 4 Foundation</h4>
+                    <p class="cert-issuer">PeopleCert</p>
+                </div>
+                <div class="cert-date">Issued: Mar 2026 | Exp: Mar 2029</div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-info">
+                    <h4>Microsoft Dynamics 365 Fundamentals (CRM, ERP)</h4>
+                    <p class="cert-issuer">Microsoft</p>
+                </div>
+                <div class="cert-date">Certified</div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-info">
+                    <h4>Microsoft Azure Fundamentals</h4>
+                    <p class="cert-issuer">Microsoft</p>
+                </div>
+                <div class="cert-date">Certified</div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-info">
+                    <h4>CompTIA Linux+</h4>
+                    <p class="cert-issuer">CompTIA</p>
+                </div>
+                <div class="cert-date">Certified</div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-info">
+                    <h4>CompTIA Security+</h4>
+                    <p class="cert-issuer">CompTIA</p>
+                </div>
+                <div class="cert-date">Certified</div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-info">
+                    <h4>Introduction to SUSE Linux Enterprise Server (SLES)</h4>
+                    <p class="cert-issuer">SUSE</p>
+                </div>
+                <div class="cert-date">Certified</div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-info">
+                    <h4>Zendesk Professional Certificate</h4>
+                    <p class="cert-issuer">Zendesk</p>
+                </div>
+                <div class="cert-date">Certified</div>
+            </div>
+        </section>
+
+        <!-- Education Tab -->
+        <section id="education" class="tab-content">
+            <h2 class="section-title">🎓 Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">GRADUATED</div>
+                    <div class="timeline-role">Bachelor of Commerce (B.Com.)</div>
+                    <div class="timeline-org">Information and Technology Management — MANCOSA</div>
+                    <p style="color: var(--text-secondary); margin-top: 0.5rem; font-size: 0.95rem;">
+                        My academic background combines business management principles with information technology, providing a solid foundation for understanding how technology supports organizational objectives and operational efficiency.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Tab -->
+        <section id="projects" class="tab-content">
+            <h2 class="section-title">🚀 Featured Projects</h2>
+            <div class="grid-cards">
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title"><a href="https://github.com/knojoko1/java" target="_blank">Java</a></span>
+                        <i class="fa-brands fa-java" style="color: #ED8B00; font-size: 1.2rem;"></i>
+                    </div>
+                    <p class="card-desc">Java programming, object-oriented programming, and software development fundamentals[cite: 1].</p>
+                    <div class="tech-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">OOP</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title"><a href="https://github.com/knojoko1/python" target="_blank">Python</a></span>
+                        <i class="fa-brands fa-python" style="color: #3776AB; font-size: 1.2rem;"></i>
+                    </div>
+                    <p class="card-desc">Python programming, scripting, and automation exercises[cite: 1].</p>
+                    <div class="tech-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title"><a href="https://github.com/knojoko1/C_Code" target="_blank">C Programming</a></span>
+                        <i class="fa-solid fa-c" style="color: #00599C; font-size: 1.2rem;"></i>
+                    </div>
+                    <p class="card-desc">C programming concepts and software development practice[cite: 1].</p>
+                    <div class="tech-tags">
+                        <span class="tag">C</span>
+                        <span class="tag">Low-Level</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title"><a href="https://github.com/knojoko1/HTML" target="_blank">HTML</a></span>
+                        <i class="fa-brands fa-html5" style="color: #E34F26; font-size: 1.2rem;"></i>
+                    </div>
+                    <p class="card-desc">HTML fundamentals and web development practice[cite: 1].</p>
+                    <div class="tech-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">Web</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title"><a href="https://github.com/knojoko1/learn-jenkins-app" target="_blank">learn-jenkins-app</a></span>
+                        <i class="fa-brands fa-jenkins" style="color: #D24939; font-size: 1.2rem;"></i>
+                    </div>
+                    <p class="card-desc">CI/CD pipeline automation playground configured for building and managing automated deployments[cite: 1].</p>
+                    <div class="tech-tags">
+                        <span class="tag">Jenkins</span>
+                        <span class="tag">DevOps</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title"><a href="https://github.com/knojoko1/database" target="_blank">database</a></span>
+                        <i class="fa-solid fa-database" style="color: #4479A1; font-size: 1.2rem;"></i>
+                    </div>
+                    <p class="card-desc">Relational database schemas, normalized SQL queries, and data persistence[cite: 1].</p>
+                    <div class="tech-tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; knojoko1. Hosted on <a href="https://mypage.knojoko.africa/" style="color: var(--accent-blue); text-decoration: none;">mypage.knojoko.africa</a>.</p>
+        </div>
+    </footer>
+
+    <!-- Tab Switching Script -->
+    <script>
+        function switchTab(evt, tabId) {
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            document.getElementById(tabId).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
